@@ -1,0 +1,64 @@
+.roast-c {
+    padding: 15px;
+}
+
+.roast-c .list .item {
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.roast-c .list .item .left, .roast-c .list .item .right {
+    display: inline-block;
+}
+
+.roast-c .left .day {
+    font-size: 24px;
+}
+
+.roast-c .left .month {
+    font-size: 12px;
+}
+
+.roast-c .list .item .left {
+    position: absolute;
+}
+
+.roast-c .list .item .right {
+    margin-left: 72px;
+    min-height: 40px;
+}
+
+.roast-c .today {
+    height: 50px;
+    display: inline-block;
+    padding-top: 6px;
+}
+
+.roast-c .brush {
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    border: 1px solid #e7e7e7;
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
+
+.roast-c .brush .brush-img {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-image: url("/static/img/brush.png");
+}
+
+.roast-c .brush:hover {
+    border: 1px solid #FB830D;
+}
+
+.roast-c .brush:hover .brush-img{
+    background-image: url("/static/img/brush_hover.png");
+}
+
+.roast-c .publish {
+    margin-top: 6px;
+}

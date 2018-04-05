@@ -1,0 +1,19 @@
+.header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.header .navbar-c {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.header .navbar-default {
+    border: 0px;
+    margin-bottom: 0px;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1000px;
+}

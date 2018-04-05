@@ -1,0 +1,39 @@
+{% extends 'layout/_layout.html' %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/static/css/roast/index.css">
+{% endblock %}
+
+{% block content %}
+    <div class="roast-c">
+        <div class="list">
+            <div class="item">
+                <div class="left">
+                    <span class="day today">今天</span>
+                </div>
+                <div class="right">
+                    <div class="brush">
+                        <span class="brush-img"></span>
+                    </div>
+                    <div class="publish" style="display: none;">
+                        <div class="input-group">
+                              <input type="text" class="form-control roast-content" placeholder="这一刻的想法...">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default publish-btn" type="button">发表</button>
+                              </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-c">
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="/static/js/roast/index.js"></script>
+{% endblock %}
