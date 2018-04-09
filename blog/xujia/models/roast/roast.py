@@ -13,8 +13,10 @@ class Roast:
         cursor.execute(sql)
 
     @staticmethod
-    def get_list():
-        sql = "select * from roast order by id desc"
+    def get_list(user_id):
+        sql = "select * from roast where user_id = '%s' order by id desc" % user_id
+        logging.debug(sql)
+        logging.info(sql)
         cursor = connection.cursor()
         cursor.execute(sql)
         desc = cursor.description
