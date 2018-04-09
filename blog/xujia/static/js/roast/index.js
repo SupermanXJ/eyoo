@@ -4,7 +4,7 @@
 (function($){
 
     var createItem = function(roast){
-        var d = roast['create_time'].replace("T", " ").strToDate();
+        var d = roast['create_time'].replace("T", " ").replace("Z", "").strToDate();
         return $('\
             <div class="item">\
                 <div class="left">\
