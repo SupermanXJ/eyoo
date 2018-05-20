@@ -12,7 +12,8 @@ def index(request):
 
 @csrf_exempt
 def api_talk(request):
-    Roast.insert(1, request.POST['content'])
+    user_id = request.session['user_id']
+    Roast.insert(user_id, request.POST['content'])
     return JsonResponse({'result': True})
 
 
