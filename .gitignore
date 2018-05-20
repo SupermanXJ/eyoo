@@ -1,6 +1,4 @@
-printpdf/ali_oss.py
-
-.idea/
+uwsgi.ini
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
