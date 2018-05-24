@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-        <title>
-            {% block title %}
-                {% if request.session.user_id %}
-                    易游 - {{ request.session.user_name }}
-                {% else %}
-                    易游
-                {% endif %}
-            {% endblock %}
-        </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>
+        {% block title %}
+            {% if request.session.user_id %}
+                易游 - {{ request.session.user_name }}
+            {% else %}
+                易游
+            {% endif %}
+        {% endblock %}
+    </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+{#    <meta http-equiv="mobile-agent" content="format=html5; url=http://m.douban.com/movie/review/9355218//">#}
 
     <link rel="stylesheet" href="/static/plugin/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/static/css/layout/_layout.css">
 
     {% block styles %}<!-- custom styles -->{% endblock %}
+
+    <script type="text/javascript" src="/static/plugin/jquery/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="/static/plugin/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/static/js/base.js"></script>
+    <script type="text/javascript" src="/static/js/layout/_layout.js"></script>
+
+    {% block scripts %}<!-- custom scripts -->{% endblock %}
+
 </head>
 <body>
     <div class="header">
@@ -92,13 +103,8 @@
             </div>
         </div>
    </div>
+
+
+
 </body>
-
-<script type="text/javascript" src="/static/plugin/jquery/jquery-3.2.1.js"></script>
-<script type="text/javascript" src="/static/plugin/bootstrap/js/bootstrap.js"></script>
-<script type="text/javascript" src="/static/js/base.js"></script>
-<script type="text/javascript" src="/static/js/layout/_layout.js"></script>
-
-{% block scripts %}<!-- custom scripts -->{% endblock %}
-
 </html>

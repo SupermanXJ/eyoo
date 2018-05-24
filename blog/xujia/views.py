@@ -6,7 +6,6 @@ import logging
 from xujia.models.users import Users
 
 
-@csrf_protect
 def index(request):
     return render(request, 'index.html')
 
