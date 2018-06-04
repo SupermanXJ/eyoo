@@ -105,6 +105,31 @@ a {
     }
 }
 
+@media screen and (min-width: 769px) {
+    html {
+        font-size: 42.667px;
+    }
+
+    .header {
+        font-size: 18px;
+    }
+
+    .header .navbar-c {
+        height: 45px;
+    }
+
+    .header .navbar-l li {
+        padding: 10px 20px;
+    }
+
+    .header .navbar-r li.first-level {
+        padding: 10px 20px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+}
 
 
 .header {
@@ -158,30 +183,4 @@ a {
     margin: 0 auto;
     max-width: 1000px;
     padding: .7031rem;
-}
-
-@media screen and (min-width: 769px) {
-    html {
-        font-size: 42.667px;
-    }
-
-    .header {
-        font-size: 18px;
-    }
-
-    .header .navbar-c {
-        height: 45px;
-    }
-
-    .header .navbar-l li {
-        padding: 10px 20px;
-    }
-
-    .header .navbar-r li.first-level {
-        padding: 10px 20px;
-    }
-
-    .content {
-        padding: 15px;
-    }
 }
