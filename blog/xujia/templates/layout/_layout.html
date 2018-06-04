@@ -20,13 +20,6 @@
 
     {% block styles %}<!-- custom styles -->{% endblock %}
 
-    <script type="text/javascript" src="/static/plugin/jquery/jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="/static/plugin/bootstrap/js/bootstrap.js"></script>
-    <script type="text/javascript" src="/static/js/base.js"></script>
-    <script type="text/javascript" src="/static/js/layout/_layout.js"></script>
-
-    {% block scripts %}<!-- custom scripts -->{% endblock %}
-
 </head>
 <body>
     <div class="header">
@@ -104,7 +97,12 @@
         </div>
    </div>
 
+    <script type="text/javascript" src="/static/plugin/jquery/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="/static/plugin/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/static/js/base.js"></script>
+    <script type="text/javascript" src="/static/js/layout/_layout.js"></script>
 
+    {% block scripts %}<!-- custom scripts -->{% endblock %}
 
 </body>
 </html>
