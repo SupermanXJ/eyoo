@@ -27,8 +27,10 @@
             <nav class="navbar-l">
                 <ul>
                     <li><a href="/">主页</a></li>
-                    <li><a href="/roast/index">三言两语</a></li>
-                    <li><a href="/article/index">长话长说</a></li>
+                    {% if request.session.user_id %}
+                        <li><a href="/roast/index">三言两语</a></li>
+                        <li><a href="/article/index">长话长说</a></li>
+                    {% endif %}
                 </ul>
             </nav>
             <nav class="navbar-r">
@@ -45,8 +47,8 @@
                             </ul>
                         </li>
                     {% else %}
-                        <li class="first-level"><a class="register" href="/register">注册</a></li>
-                        <li class="first-level"><a class="login" href="/login">登录</a></li>
+{#                        <li class="first-level"><a class="register" href="/register">注册</a></li>#}
+{#                        <li class="first-level"><a class="login" href="/login">登录</a></li>#}
                     {% endif %}
                 </ul>
             </nav>

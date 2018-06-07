@@ -20,7 +20,5 @@ def api_talk(request):
 @csrf_exempt
 def api_get_list(request):
     user_id = request.session['user_id']
-    logging.debug(user_id)
-    logging.info(user_id)
     roasts = Roast.get_list(user_id)
     return JsonResponse({'roasts': roasts})
